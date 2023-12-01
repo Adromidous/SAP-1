@@ -9,7 +9,7 @@ module instruction_reg( input load,
 	
 	reg [7:0] instruction_val;
 								
-	always@ (negedge clk) begin // CHANGE THESE TO POSEDGE
+	always@ (negedge clk) begin
 	
 		if (!reset) begin // Active low reset
 			instruction_val <= 8'h00;
